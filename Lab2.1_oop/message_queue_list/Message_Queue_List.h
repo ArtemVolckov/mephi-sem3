@@ -14,15 +14,12 @@ namespace Prog3 {
 	private:
 		Node* head; // начало списка
 	public:
-		message_queue_list() { // инициализация по умолчанию
-			this->head = NULL;
-		}
+		message_queue_list() : head(nullptr) {} // инициализация по умолчанию
 		message_queue_list(Message arr[], int count, int arr_size); // инициализация из массива сообщений
 		message_queue_list(const message_queue_list& other); // копирующий конструктор
 		message_queue_list(message_queue_list&& other); // перемещающий конструктор
 		
 		~message_queue_list() { // деструктор
-			std::cout << "Destructor\n";
 			Node* ptr = this->head;
 			while (ptr != NULL) {
 				Node* ptr_next = ptr->next;

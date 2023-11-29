@@ -22,7 +22,6 @@ namespace Prog3 {
 	}
 
 	message_queue_list::message_queue_list(const message_queue_list& other) {
-		std::cout << "Copy constructor";
 		Node* ptr = other.head;
 		if (ptr == NULL)
 			this->head = NULL;
@@ -201,6 +200,8 @@ namespace Prog3 {
 				delete save;
 			}
 			ptr = ptr->next;
+			if (ptr == nullptr)
+				break;
 		}
 	}
 
