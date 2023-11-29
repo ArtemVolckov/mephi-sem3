@@ -3,7 +3,7 @@
 
 using namespace Prog3;
 
-int main()
+/*int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	try {
@@ -17,4 +17,4 @@ int main()
 		return 1;
 	}
 	return 0;
-}
+}*/

@@ -28,6 +28,7 @@ namespace Prog3 {
 			}
 		}
 
+		Node* GetHead() { return head; } // геттер для начала (головы) списка
 		void List_Print(); // вывод списка
 		Message* list_pop(); // чтение сообщения из очереди
 		void list_is_empty(); // проверка состояния очереди
